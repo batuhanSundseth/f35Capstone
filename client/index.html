@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Manager</title>
+  <link rel="stylesheet" href="/css">
+</head>
+<body>
+  <nav>
+	  <a class="navItem" href="./index.html">Password Manager</a>
+	</nav>
+  <hr/>
+  <section class="credentialsContainer">
+    <div class="credentials">
+      <h3>Login</h3>
+      <a>Username <input id="loginUsername" type="text"></a>
+      <a>Password <input id="loginPassword" type="text" style="margin-top:10px;"></a>
+      <button id="loginButton" style="margin-top:10px;">Login</button>
+    </div>
+    <div class="credentials">
+      <h3>Register</h3>
+      <a>Username <input id="registerUsername" type="text"></a>
+      <a>Password <input id="registerPassword" type="text" style="margin-top:10px;"></a>
+      <a>Confirm <input id="registerPassword2" type="text" style="margin-top:10px"></a>
+      <button id="registerButton" style="margin-top:10px;">Register</button>
+    </div>
+    <div class="credentials">
+      <h3>Password Generator</h3>
+      <button id="genPasswordButton" style="margin-top:30px;">Generate Password</button>
+      <h4 id="genPasswordContainer"></h4>
+    </div>
+  </section>
+  <hr/>
+  <section id="passwordsContainer">
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js"></script>
+</body>
+</html>
